@@ -1,0 +1,386 @@
+en: &DEFAULT_EN
+  header:
+    title: TridentNPL
+    text: Towards fully integrated infrastructure control!
+    button: Tell Me More
+    buttonlink: "#services"
+
+  services:
+    title: "Introduction"
+    text: "When SDN meets NFV, things go wild"
+    section: services
+    list:
+      - title: "E-Commerce"
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+        image:
+      - title: "Responsive Design"
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+        icon: fas fa-laptop
+      - title: "[Markdown](https://en.wikipedia.org/wiki/Markdown)"
+        desc: "Your description here, full **Markdown** support"
+        icon: fab fa-markdown
+
+  portfolio:
+    title: "Features"
+    text: "Novel features and key ideas of TridentNPL."
+    section: portfolio
+    closebutton: "Close Project"
+
+  timeline:
+    title: "Timeline"
+    text: ""
+    section: timeline
+    # left is the default
+    #start_align: "left"
+    events:
+      - title: "SIGCOMM 2018"
+        year: "2018-08"
+        desc: "Trident was first proposed as a unified programming framework for SDN and NFV. The paper summarizes the challenges when realizing practical network control in an SDNFV environment. Three novel techniques were proposed, including Kleene's 3-value logic, route algebra and live variables."
+        image: assets/img/timeline/sigcomm-2018-logo.png
+        alt:
+      - title: "NSFC 61902266"
+        year: "2019"
+        desc: "In 2019, the Trident project was funded by the National Science Foundation of China, under grant 61902266 entitled \"Theories and Key Techniques of High-level SDNFV Programming\""
+        image: assets/img/timeline/nsfc.png
+      - title: "JSAC 2020"
+        year: "2020-07"
+        desc: "Trident was accepted by the IEEE JSAC series on Network Softwarization and Enablers. The paper reveals more insights on the compilation process and runtime. Key techniques include the reactive tables and Trident update protocol."
+        image: assets/img/timeline/ieee-comsoc.png
+        alt:
+    end: "TO BE <br> CONTINUED"
+
+  about:
+    title: "About Us"
+    text: "our story"
+    body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported."
+    section: about
+
+  clients:
+    section: clients
+    max-height: 100px
+    horizontal-scrolling: "" #"yes/no"
+    list:
+      - title: "envato"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/envato.jpg
+      - title: "designmodo"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/designmodo.jpg
+      - title: "themeforest"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/themeforest.jpg
+      - title: "Creative Market"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/creative-market.jpg
+
+  team:
+    title: "OUR AMAZING TEAM"
+    text: "Lorem ipsum dolor sit amet consectetur."
+    subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
+    section: team
+    people:
+      - name: "Kay Garland"
+        role: "Lead Designer"
+        image: assets/img/team/500x500.jpg
+        social:
+          - url: https://twitter.com
+            icon: fab fa-twitter
+          - url: https://facebook.com
+            icon: fab fa-facebook-f
+          - url: https://linkedin.com
+            icon: fab fa-linkedin-in
+      - name: "Larry Parker"
+        role: "Lead Marketer"
+        image: assets/img/team/2.jpg
+        social:
+          - url: https://twitter.com
+            icon: fab fa-twitter
+          - url: https://facebook.com
+            icon: fab fa-facebook-f
+          - url: https://linkedin.com
+            icon: fab fa-linkedin-in
+      - name: "Diana Perterson"
+        role: "Lead Developer"
+        image: assets/img/team/500x500.jpg
+        social:
+          - url: https://twitter.com
+            icon: fab fa-twitter
+          - url: https://facebook.com
+            icon: fab fa-facebook-f
+          - url: https://linkedin.com
+            icon: fab fa-linkedin-in
+
+
+  footer:
+    legal: "Privacy Policy"
+    social:
+      - url: https://github.com/emiapwil/tridentnpl
+        icon: "fab fa-github"
+en-US:
+  <<: *DEFAULT_EN
+en-CA:
+  <<: *DEFAULT_EN
+en-GB:
+  <<: *DEFAULT_EN
+en-AU:
+  <<: *DEFAULT_EN
+
+# Chinese
+# -------
+zh: &DEFAULT_ZH
+  header:
+    title: TridentNPL
+    text: 一种面向SDNFV的高级网络控制编程框架
+    button: 了解更多
+    buttonlink: "#services_cn"
+
+  services:
+    title: "TridentNPL概述"
+    text: "了解TridentNPL的关键抽象"
+    section: services_cn
+    list:
+      - title: "统一控制"
+        desc: "除了数据包头部中包含的各层协议属性之外，虚拟网络功能可以为不同粒度的数据包提供更加灵活的、应用层相关的属性。TridentNPL提供了*流属性*抽象，在网络功能虚拟化与软件定义网络融合的网络中实现基于属性的网络控制。"
+        icon: fas fa-gears
+      - title: "三值逻辑"
+        desc: "虚拟网络功能获取属性的过程是异步的，传统的二值条件判断无法表达属性获取过程中的控制逻辑。TridentNPL引入了*三值逻辑*，允许对未知状态的数据包进行显式控制，保证了网络控制的完整性"
+        icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
+      - title: "路由代数"
+        desc: ""
+        icon: fas fa-bezier-curve
+
+  portfolio:
+    title: "深入TridentNPL"
+    text: "了解TridentNPL的编译过程和关键技术."
+    section: portafolio
+    closebutton: "返回"
+
+  timeline:
+    title: "发展历程"
+    text: "TridentNPL的发展过程"
+    section: timeline_cn
+    # left is the default
+    #start_align: "left"
+    events:
+      - title: "SIGCOMM 2018"
+        year: "2018-08"
+        desc: "Trident于2018年首次发表于网络领域的顶级会议ACM SIGCOMM。在这篇论文中，项目组及者对软件定义网络和网络功能虚拟化这两种网络软件化技术进行统一控制中可能出现的问题进行了讨论，并提出了一种面向软件定义网络和网络功能虚拟化的通用高级网络编程模型Trident。在该论文中，Trident编程模型中引入了三值逻辑和活跃变量两个关键编程抽象。"
+        image: assets/img/timeline/sigcomm-2018-logo.png
+        alt:
+      - title: "NSFC 61902266"
+        year: "2019"
+        desc: "2019年，Trident项目获得中国国家自然科学基金委青年基金资助，项目题为“面向SDN和NFV融合网络的高级编程基础理论和关键技术研究”。"
+        image: assets/img/timeline/nsfc.png
+      - title: "JSAC 2020"
+        year: "2020-07"
+        desc: "Trident于2020年发表于IEEE JSAC 的Network Softwarization and Enablers专刊。这篇文章对Trident编程语言的编译过程和运行环境进行了介绍，包括相应变量表和Trident更新协议这两项关键技术。"
+        image: assets/img/timeline/ieee-comsoc.png
+        alt:
+    end: ""
+
+  about:
+    title: "了解更多"
+    text: "TridentNPL相关资料及关键词"
+    body: "
+    - SIGCOMM 2018 [论文](https://dl.acm.org/authorize?N666951),
+      [报告](https://conferences.sigcomm.org/sigcomm/2018/files/slides/paper_7.3.pdf): 三值逻辑，路由代数理论，活跃变量
+
+    - JSAC 2020 [论文](https://ieeexplore.ieee.org/document/9107221): 活跃变量表，推拉式更新协议
+
+    - RFC 9240 [标准](https://datatracker.ietf.org/doc/rfc9240/): 流属性宣告
+
+    "
+    section: about_cn
+
+  clients:
+    section: clientes
+    max-height: 100px
+    horizontal-scrolling: "" #"yes/no"
+    list:
+
+  team:
+    title: "研究人员"
+    text: ""
+    subtext:
+    section: team_cn
+    people:
+      - name: "高   凯"
+        role: "四川大学助理研究员"
+        image: assets/img/team/gk-new.png
+        social:
+          - url: https://github.com/emiapwil
+            icon: fab fa-github
+
+  contact:
+    title: "联系我们"
+    text: ""
+    section: contact_cn
+    name: "名字*"
+    name-validation: "请输入您的名字"
+    email: "电子邮件*"
+    email-validation: "请输入您的电子邮件地址"
+    phone: "联系电话*"
+    phone-validation: "请输入您的电话号码"
+    message: "消息*"
+    message-validation: "请输入您的留言."
+    subject: "TridentNPL"
+    submit: "发送消息"
+
+  footer:
+    legal: "隐私策略"
+    social:
+      - url: https://github.com/emiapwil/tridentnpl
+        icon: "fab fa-github"
+zh-CN:
+  <<: *DEFAULT_ZH
+
+# Deutsch
+# -----------------
+de: &DEFAULT_DE
+  header:
+    title: Willkommen auf unserer Webseite!
+    text: Schön das Sie hier sind!
+    button: Mehr erfahren
+    buttonlink: "#Angebote"
+
+  services:
+    title: "Leistungen"
+    text: "Was wir anbieten."
+    section: Leistungen
+    list:
+      - title: "E-Commerce"
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+        icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
+      - title: "Responsive Design"
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+        icon: fas fa-laptop
+      - title: "[Markdown](https://de.wikipedia.org/wiki/Markdown)"
+        desc: "Hier können Sie etwas mit **Markdown** einfügen."
+        icon: fab fa-markdown
+
+  portfolio:
+    title: "Portfolio"
+    text: "Lorem ipsum dolor sit amet consectetur."
+    section: Portfolio
+    closebutton: "Schließen"
+
+  timeline:
+    title: "Geschichte"
+    text: "Lorem ipsum timeline"
+    section: Geschichte
+    # left is the default
+    #start_align: "left"
+    events:
+      - title: "Unsere Anfänge"
+        year: "2009-2011"
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+        image: assets/img/timeline/1.jpg
+        alt:
+      - title: "Gründung der Firma"
+        year: "März 2011"
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+        image: assets/img/timeline/2.jpg
+        alt:
+      - title: "Das Jekyll-Thema wurde erstellt"
+        year: "2019"
+        desc: "Ravi Riley wandelte Agency, ein auf Bootstrap basierendes Thema, in ein Jekyll-Thema um. Man kann das Jekyll-Thema als Ruby-Gem oder remotely installieren. Für mehr Informationen, schauen Sie sich die Dokumentation an."
+        image: assets/img/timeline/3.jpg
+        alt: Bildbeschreibung
+      - title: "Titel"
+        year: "2009-2011"
+        desc: "Hier können Sie etwas mit **Markdown** einfügen."
+        image: assets/img/timeline/4.jpg
+        alt:
+        # you can enforce the alignment
+        align: right
+    end: "Seien Sie <br> Teil unserer <br> Geschichte!"
+
+  about:
+    title: "Über uns"
+    text: "Unsere Geschichte."
+    body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported."
+    section: Ueber
+
+  clients:
+    section: Kunden
+    max-height: 100px
+    horizontal-scrolling: "" #"yes/no"
+    list:
+      - title: "envato"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/envato.jpg
+      - title: "designmodo"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/designmodo.jpg
+      - title: "themeforest"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/themeforest.jpg
+      - title: "Creative Market"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/creative-market.jpg
+
+  team:
+    title: "Unser großartiges Team"
+    text: "Lorem ipsum dolor sit amet consectetur."
+    subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
+    section: Team
+    people:
+      - name: "Kay Garland"
+        role: "Chef-Designer"
+        image: assets/img/team/500x500.jpg
+        social:
+          - url: https://twitter.com
+            icon: fab fa-twitter
+          - url: https://facebook.com
+            icon: fab fa-facebook-f
+          - url: https://linkedin.com
+            icon: fab fa-linkedin-in
+      - name: "Larry Parker"
+        role: "Chef der Werbeabteilung"
+        image: assets/img/team/2.jpg
+        social:
+          - url: https://twitter.com
+            icon: fab fa-twitter
+          - url: https://facebook.com
+            icon: fab fa-facebook-f
+          - url: https://linkedin.com
+            icon: fab fa-linkedin-in
+      - name: "Diana Perterson"
+        role: "Chef-Programmiererin"
+        image: assets/img/team/500x500.jpg
+        social:
+          - url: https://twitter.com
+            icon: fab fa-twitter
+          - url: https://facebook.com
+            icon: fab fa-facebook-f
+          - url: https://linkedin.com
+            icon: fab fa-linkedin-in
+
+  contact:
+    title: "Kontakt"
+    text: "Kontaktieren Sie uns."
+    section: Kontakt
+    name: "Name*"
+    name-validation: "Geben Sie einen Namen ein."
+    email: "E-Mail*"
+    email-validation: "Geben Sie Ihre E-Mail-Addresse ein."
+    phone: "Telefonnummer*"
+    phone-validation: "Geben Sie Ihre Telefonnummer ein."
+    message: "Nachricht*"
+    message-validation: "Schreiben Sie etwas..."
+    subject: "Kontakt-Formular Bestätigung"
+    submit: "Nachricht absenden"
+
+  footer:
+    legal: "Datenschutzerklärung"
+    social:
+      - url: https://twitter.com
+        icon: "fab fa-twitter"
+      - url: https://facebook.com
+        icon: "fab fa-facebook-f"
+      - url: https://linkedin.com
+        icon: "fab fa-linkedin-in"
+      - url: https://github.com/raviriley/agency-jekyll-theme
+        icon: "fab fa-github"
+      - url: https://instagram.com
+        icon: "fab fa-instagram"
