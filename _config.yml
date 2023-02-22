@@ -29,7 +29,8 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  emiapwil
 
 # Build settings
-theme: jekyll-agency
+remote_theme: raviriley/agency-jekyll-theme
+# theme: jekyll-agency
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
