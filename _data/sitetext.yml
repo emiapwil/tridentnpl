@@ -147,7 +147,7 @@ zh: &DEFAULT_ZH
         desc: "虚拟网络功能获取属性的过程是异步的，传统的二值条件判断无法表达属性获取过程中的控制逻辑。TridentNPL引入了*三值逻辑*，允许对未知状态的数据包进行显式控制，保证了网络控制的完整性"
         icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
       - title: "路由代数"
-        desc: ""
+        desc: "TridentNPL引入路由代数，将路径集合作为基本的路由管理单元，允许系统将不同的路由计算方法进行组合，并且对网络中的路径按照属性、路径标点等特征进行选择。"
         icon: fas fa-bezier-curve
 
   portfolio:
