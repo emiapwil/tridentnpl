@@ -36,6 +36,8 @@ plugins:
   - jekyll-remote-theme
 
 locale: "zh"
+collections:
+  portfolio:
 
 # Exclude from processing.
 # The following items will not be processed, by default.

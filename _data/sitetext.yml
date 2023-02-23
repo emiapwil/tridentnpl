@@ -131,6 +131,7 @@ zh: &DEFAULT_ZH
   header:
     title: TridentNPL
     text: 一种面向SDNFV的高级网络控制编程框架
+    image:  assets/img/black.jpg
     button: 了解更多
     buttonlink: "#services_cn"
 
