@@ -1,13 +1,13 @@
 ---
 title: SDNPL基础知识
 subtitle: 软件定义网络及高级网络控制编程基础知识
-image: /assets/img/sdnpl/sdnpl.png
+image: assets/img/sdnpl/sdnpl.png
 alt: Shirts on a hanger
 
 caption:
   title: SDNPL基础知识
   subtitle: 软件定义网络及高级网络控制编程基础知识
-  thumbnail: /assets/img/sdnpl/sdnpl-400x300.png
+  thumbnail: assets/img/sdnpl/sdnpl-400x300.png
 ---
 
 资料来源：四川大学网络空间安全学院《软件定义网络与高级网络控制编程》课程
