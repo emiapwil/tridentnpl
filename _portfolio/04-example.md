@@ -23,7 +23,27 @@ caption:
 - 普通内网主机在访问互联网时只能使用10 Gbps的链路，并且必须经过入侵检测系统
 - 如果内网到互联网的流量属于一个大文件传输任务时，可以不经过入侵检测系统并且使用40 Gbps的链路
 
+使用Trident实现上述网络策略的示例代码如下：
+{:.text-left}
+```{.python}
+if (pkt.sip in "10.0.0.0/16") and (pkt.dip in "10.0.0.0/16"){
+  r = H :-:  H // case1
+}else{
+  iff(pkt.authentication == "success"){
+    iff (pkt.is_bulk_transfer){
+      r = H :-: Internet where (cap_gb == 40) > H :-: Internet
+      // case 4
+    }else{
+       r = H :-: IDS :-: Internet where (cap_gb == 10)
+       // case 3
+    }
+  }else{
+    r = H :-: AAA where (cap_gb == 10) // case 2
+  }
+}
+```
+{:.text-left}
 
 {:.list-inline}
 
-- Date: January 2017
+- Date: January 2022
