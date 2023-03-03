@@ -1,5 +1,9 @@
 # tridentnpl.github.io
 
+# Agency Jekyll Theme
+
+https://github.com/raviriley/agency-jekyll-theme
+
 # Test on your local computer
 
 ## install 
